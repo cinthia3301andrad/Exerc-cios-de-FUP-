@@ -18,6 +18,12 @@ def multmatriz(matriz1,matriz2):
     return matriz3
 
 
+def gravarmatrizC(matriz):
+    arquivo = open('c.txt' , 'w')
+    for i in range(len(matrizC)):
+        arquivo.write(str(matriz[i]).strip('[]'))
+    arquivo.close()
+
 print('----- ESSA É A MATRIZ A ------')
 matrizA = criar_matriz('a.txt')
 print(matrizA)
@@ -29,6 +35,4 @@ print()
 print('----- ESSA É A MATRIZ C ------')
 matrizC = multmatriz(matrizA,matrizB)
 print(matrizC)
-
-
-
+gravarmatrizC(matrizC)
