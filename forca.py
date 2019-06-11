@@ -11,7 +11,6 @@ def escolher_palavras(arquivos):
 
 def jogada(escolha):
     print('Tente adivinhar a palavra:  ', end='')
-    print(escolha)
     palavra = []
     for i in range(len(escolha)): #Adiciono traços na quantidade da minha palavra random.
          palavra.append('-')
